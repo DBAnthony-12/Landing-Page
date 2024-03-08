@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signUp.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Sign Up</h1>
+      <div class="container">
+        <div class="main">
+          <div class="content">
+            <h2>Sign Up</h2>
+
+            <form id="signupForm" action="" method="post">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required />
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email" required />
+          
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="password" required />
+          
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required />
+          
+              <button class="btn" type="button" id="submitBtn">Submit</button>
+          </form>
+            <p class="account">
+              Don't have an account> <a href="#">Login</a>
+            </p>
+          </div>
+          <div class="form-img">
+            <img src="login-icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('submitBtn').addEventListener('click', function() {
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('password').value;
+          var confirmPassword = document.getElementById('confirmPassword').value;
+          
+          // Check if all fields are filled
+          if (!name || !email || !password || !confirmPassword) {
+              alert('Please fill in all fields.');
+              return; // Stop the function from proceeding
+          }
+      
+          // Check if passwords match
+          if (password !== confirmPassword) {
+              alert('Passwords do not match.');
+              return; // Stop the function from proceeding
+          }
+          
+          // If validation is successful, redirect to the About page
+          window.location.href = 'About.html';
+      });
+      </script>
+  </body>
+</html>

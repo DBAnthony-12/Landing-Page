@@ -1,0 +1,40 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("coffe1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center; /* Center-align the child elements */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure at least full viewport height */
+}
+
+.container {
+    max-width: 800px;
+    overflow: hidden;
+    padding: 0 20px;
+    text-align: center; /* Reset text alignment for the container content */
+}
+
+.header, .footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+.content {
+    padding: 20px;
+    background: #ffffff;
+}

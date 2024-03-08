@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Web Page</title>
+  </head>
+
+  <body>
+    <!--Header sections starts-->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="coffee_logo.jfif" alt="" />
+      </a>
+
+       <nav class="navbar">
+            <div id="close"class="fa-solid fa-rectangle-xmark"></div>
+
+            <a href="#" class="nav-items">Home</a>
+            <a href="#" class="nav-items">Services</a>
+            <a href="#" class="nav-items">Signup</a>
+            <a href="#" class="nav-items">Menu</a>
+        </nav>
+
+      <div id="menu" class="fa-solid fa-bars"> </div>
+    </header>
+
+    <!--Home section starts-->
+
+    <section class="home">
+      <div class="content">
+        <h1 class="title">
+          Fresh <span> Coffee </span> in the <span>Morning</span>
+        </h1>
+        <p class="description">
+          Start your morning with a good cup of coffee. <br />
+          Even bad coffee is better than no coffee at all
+        </p>
+        <a href="SignUp.html" class="btn">Sign Up</a>
+        <a href="About.html" class="btn">Read More</a>
+      </div>
+
+      <div class="image">
+        <img src="coffee.jpg" alt="" data-speed="-3" class="move" />
+      </div>
+    </section>
+
+    <!--js link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!--Custom js file-->
+    <script src="script.js"></script>
+  </body>
+</html>
