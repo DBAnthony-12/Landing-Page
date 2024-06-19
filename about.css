@@ -38,3 +38,27 @@
     padding: 20px;
     background: #ffffff;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: grey;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #8bb7d4;
+   
+}
